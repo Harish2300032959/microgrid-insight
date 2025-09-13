@@ -14,7 +14,10 @@ const buttonVariants = cva(
         outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+        hero: "gradient-hero text-white shadow-glow hover:shadow-none transition-bounce",
+        solar: "gradient-solar text-solar-foreground hover:opacity-90",
+        wind: "gradient-wind text-wind-foreground hover:opacity-90",
+        battery: "gradient-battery text-battery-foreground hover:opacity-90",
       },
       size: {
         default: "h-10 px-4 py-2",

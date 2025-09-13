@@ -57,6 +57,22 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        solar: {
+          DEFAULT: "hsl(var(--solar))",
+          foreground: "hsl(var(--solar-foreground))",
+        },
+        wind: {
+          DEFAULT: "hsl(var(--wind))",
+          foreground: "hsl(var(--wind-foreground))",
+        },
+        battery: {
+          DEFAULT: "hsl(var(--battery))",
+          foreground: "hsl(var(--battery-foreground))",
+        },
+        consumption: {
+          DEFAULT: "hsl(var(--consumption))",
+          foreground: "hsl(var(--consumption-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
