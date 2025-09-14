@@ -13,8 +13,6 @@ import {
 } from '@/utils/dataProcessing';
 import EnergyCard from '@/components/EnergyCard';
 import EnergyChart from '@/components/EnergyChart';
-import Alerts from '@/components/Alerts';
-import Billing from '@/components/Billing';
 import { 
   Sun, 
   Wind, 
@@ -42,15 +40,6 @@ const Dashboard = () => {
   const hourlyData = getHourlyData(user.houseNumber, selectedDay);
   const currentStats = getCurrentDayStats(user.houseNumber);
   const alerts = getAlerts(user.houseNumber);
-
-  // Mock data for Alerts and Billing components
-  // TODO: Replace with real data from your backend/API
-  const mockBillingData = {
-    dailyConsumption: currentStats.consumption, // Using current consumption from existing data
-    target: 25.0, // Daily target consumption in kWh
-    tolerance: 5.0, // Tolerance before billing kicks in
-    ratePerKwh: 8.5 // Rate per kWh for excess consumption
-  };
 
   const getAlertIcon = (type: string) => {
     switch (type) {
@@ -206,25 +195,6 @@ const Dashboard = () => {
               />
             </>
           )}
-        </div>
-
-        {/* New Alerts and Billing Sections */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-          <Alerts
-            houseNumber={user.houseNumber}
-            dailyConsumption={mockBillingData.dailyConsumption}
-            target={mockBillingData.target}
-            tolerance={mockBillingData.tolerance}
-          />
-          <div>
-            <Billing
-              houseNumber={user.houseNumber}
-              dailyConsumption={mockBillingData.dailyConsumption}
-              target={mockBillingData.target}
-              tolerance={mockBillingData.tolerance}
-              ratePerKwh={mockBillingData.ratePerKwh}
-            />
-          </div>
         </div>
 
         {/* System Alerts Section */}

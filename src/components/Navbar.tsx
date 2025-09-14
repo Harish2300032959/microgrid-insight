@@ -13,6 +13,8 @@ const Navbar = () => {
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About Us' },
     { path: '/dashboard', label: 'Dashboard', protected: true },
+    { path: '/alerts', label: 'Alerts', protected: true },
+    { path: '/billing', label: 'Billing', protected: true },
     { path: '/contact', label: 'Contact' },
   ];
 
