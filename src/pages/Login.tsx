@@ -56,7 +56,7 @@ const Login = () => {
           <div className="flex items-center justify-center w-10 h-10 rounded-lg gradient-primary shadow-glow">
             <Zap className="h-6 w-6 text-white" />
           </div>
-          <span className="text-2xl font-bold">REMS</span>
+          <span className="text-2xl font-bold">SAHAYA GRID</span>
         </Link>
 
         <Card className="shadow-xl border-0 bg-card/80 backdrop-blur">

@@ -11,8 +11,8 @@ const Navbar = () => {
 
   const navLinks = [
     { path: '/', label: 'Home' },
+    { path: '/about', label: 'About Us' },
     { path: '/dashboard', label: 'Dashboard', protected: true },
-    { path: '/about', label: 'About Project' },
     { path: '/contact', label: 'Contact' },
   ];
 
@@ -24,7 +24,7 @@ const Navbar = () => {
             <div className="flex items-center justify-center w-8 h-8 rounded-lg gradient-primary">
               <Zap className="h-5 w-5 text-white" />
             </div>
-            <span className="hidden sm:inline-block">REMS</span>
+            <span className="hidden sm:inline-block">SAHAYA GRID</span>
           </Link>
           
           <div className="hidden md:flex items-center space-x-6">

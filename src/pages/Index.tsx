@@ -44,7 +44,7 @@ const Index = () => {
         <div className="absolute inset-0 gradient-hero opacity-10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent gradient-hero">
+            <h1 className="text-2xl md:text-6xl font-bold mb-6 text-black ">
               Renewable Energy Monitoring System for Microgrids
             </h1>
             <p className="text-xl lg:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
@@ -130,11 +130,9 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-primary text-primary-foreground py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-lg font-medium">Government of Odisha | Electronics & IT Department</p>
-        </div>
-      </footer>
+      <footer className="w-full bg-gray-800 text-white py-4 text-center">
+  &copy; 2025 Renewable Energy Monitoring System | All Rights Reserved
+</footer>
     </div>
   );
 };

@@ -31,7 +31,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@odisha-rems.gov.in', 'support@odisha-rems.gov.in'],
+      details: ['info@sahayagrid.gov.in','support@sahayagrid.gov.in'],
     },
     {
       icon: Phone,
@@ -42,8 +42,8 @@ const Contact = () => {
       icon: MapPin,
       title: 'Address',
       details: [
+        'SAHAYA GRID Project Team',
         'Electronics & IT Department',
-        'Government of Odisha',
         'Bhubaneswar, Odisha 751001'
       ],
     },
@@ -74,7 +74,7 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle>Get in Touch</CardTitle>
                 <CardDescription>
-                  Contact information for the REMS project team
+                  Contact information for the SAHAYA GRID project team
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -176,7 +176,7 @@ const Contact = () => {
                       id="subject" 
                       name="subject"
                       required 
-                      placeholder="Inquiry about REMS system"
+                      placeholder="Inquiry about SAHAYA GRID system"
                     />
                   </div>
 
@@ -225,10 +225,9 @@ const Contact = () => {
         </div>
 
         {/* Footer */}
-        <div className="text-center mt-16 py-8 border-t">
-          <p className="text-lg font-medium mb-2">Government of Odisha</p>
-          <p className="text-muted-foreground">Electronics & IT Department</p>
-        </div>
+        
+
+
       </div>
     </div>
   );
